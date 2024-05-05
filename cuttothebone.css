@@ -1,93 +1,79 @@
-:root {
-  --c1: hsl(219, 79%, 66%);
-  --c2: hsl(319, 100%, 60%);
-  --c3: hsl(266, 49%, 25%);
-  --c4: hsl(60, 82%, 58%);
-  --c5: hsl(0, 67%, 55%);
-  --c6: hsl(213, 96%, 11%);
-  --c2hsl: 319, 100%, 60%;
-}
-
-@property --outrun {
-  syntax: "<number>";
-  initial-value: 0;
-  inherits: false;
-}
-
-@keyframes outrun {
-  to { --outrun: 1; }
-}
+@import url(https://fonts.googleapis.com/css?family=Black+Ops+One);
+@import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
 
 html {
-  height: 100vh;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,207cca+73,207cca+73,207cca+74,207cca+77,28f5fc+81,28f5fc+81,207cca+82,2989d8+84,2989d8+84,d200f7+94 */
+  width:100%;
+  height:100%;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  background-repeat:no-repeat;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+68,207cca+75,28f5fc+81,28f5fc+81,d200f7+91,000000+95,000000+95 */
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #000000 68%, #207cca 75%, #28f5fc 81%, #28f5fc 81%, #d200f7 91%, #000000 95%, #000000 95%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(68%,#000000), color-stop(75%,#207cca), color-stop(81%,#28f5fc), color-stop(81%,#28f5fc), color-stop(91%,#d200f7), color-stop(95%,#000000), color-stop(95%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #000000 68%,#207cca 75%,#28f5fc 81%,#28f5fc 81%,#d200f7 91%,#000000 95%,#000000 95%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #000000 68%,#207cca 75%,#28f5fc 81%,#28f5fc 81%,#d200f7 91%,#000000 95%,#000000 95%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #000000 68%,#207cca 75%,#28f5fc 81%,#28f5fc 81%,#d200f7 91%,#000000 95%,#000000 95%); /* IE10+ */
+background: linear-gradient(135deg,  #000000 68%,#207cca 75%,#28f5fc 81%,#28f5fc 81%,#d200f7 91%,#000000 95%,#000000 95%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
-html::before {
-  content: "";
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  height: 100vh;
-  z-index: -1;
-  pointer-events: none;
-  filter: brightness(1.125);
-  animation: outrun 0.6s linear infinite;
-  --lgDepth: url("data:image/svg+xml;utf8,<svg width=\"1808\" height=\"230\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M904 -46 L-3616 230 M904 -46 L-3254.4 230 M904 -46 L-2892.8 230 M904 -46 L-2531.2000000000003 230 M904 -46 L-2169.6000000000004 230 M904 -46 L-1808 230 M904 -46 L-1446.4 230 M904 -46 L-1084.8000000000002 230 M904 -46 L-723.2 230 M904 -46 L-361.6 230 M904 -46 L0 230 M904 -46 L361.6 230 M904 -46 L723.2 230 M904 -46 L1084.8000000000002 230 M904 -46 L1446.4 230 M904 -46 L1808 230 M904 -46 L2169.6000000000004 230 M904 -46 L2531.2000000000003 230 M904 -46 L2892.8 230 M904 -46 L3254.4 230 M904 -46 L3616 230 M904 -46 L3977.6000000000004 230 M904 -46 L4339.200000000001 230 M904 -46 L4700.8 230 M904 -46 L5062.400000000001 230 M904 -46 L5424 230\" stroke=\"cornflowerblue\" stroke-width=\"2\" vector-effect=\"non-scaling-stroke\" /></svg>") left bottom / 100% 40% no-repeat;
-  --outrun: 0;
-  --pos: var(--outrun, 0);
-  --distance: 0.5%;
-  --hor: 60%;
-  --l0: var(--hor) + 0 * 0 * var(--distance) + (((0 + 1) * (0 + 1) * var(--distance) - 0 * 0 * var(--distance)) * var(--pos));
-  --l1: var(--hor) + 1 * 1 * var(--distance) + (((1 + 1) * (1 + 1) * var(--distance) - 1 * 1 * var(--distance)) * var(--pos));
-  --l2: var(--hor) + 2 * 2 * var(--distance) + (((2 + 1) * (2 + 1) * var(--distance) - 2 * 2 * var(--distance)) * var(--pos));
-  --l3: var(--hor) + 3 * 3 * var(--distance) + (((3 + 1) * (3 + 1) * var(--distance) - 3 * 3 * var(--distance)) * var(--pos));
-  --l4: var(--hor) + 4 * 4 * var(--distance) + (((4 + 1) * (4 + 1) * var(--distance) - 4 * 4 * var(--distance)) * var(--pos));
-  --l5: var(--hor) + 5 * 5 * var(--distance) + (((5 + 1) * (5 + 1) * var(--distance) - 5 * 5 * var(--distance)) * var(--pos));
-  --l6: var(--hor) + 6 * 6 * var(--distance) + (((6 + 1) * (6 + 1) * var(--distance) - 6 * 6 * var(--distance)) * var(--pos));
-  --l7: var(--hor) + 7 * 7 * var(--distance) + (((7 + 1) * (7 + 1) * var(--distance) - 7 * 7 * var(--distance)) * var(--pos));
-  --l8: var(--hor) + 8 * 8 * var(--distance) + (((8 + 1) * (8 + 1) * var(--distance) - 8 * 8 * var(--distance)) * var(--pos));
-  --l9: var(--hor) + 9 * 9 * var(--distance) + (((9 + 1) * (9 + 1) * var(--distance) - 9 * 9 * var(--distance)) * var(--pos));
-  --lgh: linear-gradient(transparent 0px var(--hor), var(--c1) var(--hor) calc(var(--hor) + 2px), transparent calc(var(--hor) + 2px));
-  --lg0: linear-gradient(transparent 0px calc(var(--l0)), var(--c1) calc(var(--l0)) calc(var(--l0) + 2px), transparent calc(var(--l0) + 2px));
-  --lg1: linear-gradient(transparent 0px calc(var(--l1)), var(--c1) calc(var(--l1)) calc(var(--l1) + 2px), transparent calc(var(--l1) + 2px));
-  --lg2: linear-gradient(transparent 0px calc(var(--l2)), var(--c1) calc(var(--l2)) calc(var(--l2) + 2px), transparent calc(var(--l2) + 2px));
-  --lg3: linear-gradient(transparent 0px calc(var(--l3)), var(--c1) calc(var(--l3)) calc(var(--l3) + 2px), transparent calc(var(--l3) + 2px));
-  --lg4: linear-gradient(transparent 0px calc(var(--l4)), var(--c1) calc(var(--l4)) calc(var(--l4) + 2px), transparent calc(var(--l4) + 2px));
-  --lg5: linear-gradient(transparent 0px calc(var(--l5)), var(--c1) calc(var(--l5)) calc(var(--l5) + 2px), transparent calc(var(--l5) + 2px));
-  --lg6: linear-gradient(transparent 0px calc(var(--l6)), var(--c1) calc(var(--l6)) calc(var(--l6) + 2px), transparent calc(var(--l6) + 2px));
-  --lg7: linear-gradient(transparent 0px calc(var(--l7)), var(--c1) calc(var(--l7)) calc(var(--l7) + 2px), transparent calc(var(--l7) + 2px));
-  --lg8: linear-gradient(transparent 0px calc(var(--l8)), var(--c1) calc(var(--l8)) calc(var(--l8) + 2px), transparent calc(var(--l8) + 2px));
-  --lg9: linear-gradient(transparent 0px calc(var(--l9)), var(--c1) calc(var(--l9)) calc(var(--l9) + 2px), transparent calc(var(--l9) + 2px));
-  background: var(--lgDepth),
-              var(--lgh),
-              var(--lg0),
-              var(--lg1),
-              var(--lg2),
-              var(--lg3),
-              var(--lg4),
-              var(--lg5),
-              var(--lg6),
-              var(--lg7),
-              var(--lg8),
-              var(--lg9),
-              var(--mtn) center 60% / min(75vh, 75vw) no-repeat,
-              var(--mtn2) center 60% / min(75vh, 75vw) repeat-x,
-              linear-gradient(transparent 20%, var(--c5) 60%, var(--c3) 60% 70%, hsla(var(--c2hsl), 0.75), transparent 150%),
-              repeating-linear-gradient(90deg, transparent 0px 2px, var(--c3) 3px 4px),
-              radial-gradient(circle at center, transparent min(45vh, 45vw), hsla(var(--c2hsl), 0.75) min(65vh, 65vw), var(--c3) 120%),
-              linear-gradient(
-                transparent 30vh,
-                  var(--c5) 30vh 30.2vh,
-                     transparent 30.2vh 35.2vh,
-                              var(--c5) 35.2vh 36vh,
-                                   transparent 36vh 40vh,
-                                          var(--c5) 40vh 41.6vh,
-                                             transparent 41.6vh 45.1vh,
-                                                      var(--c5) 45.1vh 48.6vh,
-                                                           transparent 48.6vh 52.5vh,
-                                                                    var(--c5) 52.5vh 57.5vh,
-                                                                         transparent 57.5vh
-              ),
-              radial-gradient(circle at center, var(--c4) min(45vh, 45vw), transparent min(45vh, 45vw)),
-              linear-gradient(var(--c5) 60%, var(--c3) 60%, var(--c2) 150%);
+
+body {
+  width:100%;
+  height:100%;
+background: repeating-linear-gradient(-13deg, darken(#FF33CC, 30%), rgba(255, 255, 255, .7) 1px, lighten(#FF33CC, 10%) 2px, transparent 6px, transparent 150px);
+  margin:0;
+}
+
+.grid {
+  width:100%;
+  height:100%;
+  background: repeating-linear-gradient(45deg, darken(#FF33CC, 40%), rgba(255, 255, 255, .7) 1px, lighten(#FF33CC, 5%) 2px, transparent 6px, transparent 150px);
+}
+
+.container {
+  
+  position: relative;
+  width:500px;
+  margin:auto;
+  //margin-top:100px;
+  text-align:center;
+  padding-top:10%;
+}
+
+h1 {
+  font-family: 'Black Ops One', cursive;
+  color: #00CCCC;
+  font-size: 150px;
+  text-shadow: 5px 3px 0px #FF33CC;
+  margin:0;
+  transform: rotate(-13deg);
+  position: absolute;
+  text-align:center;
+}
+
+h2 {
+  font-family: 'Nothing You Could Do', cursive;
+  color: #FF33CC;
+  font-size: 99px;
+  margin:0;
+  text-shadow: 3px 3px 0px #7A00F4;
+  position: absolute;
+  text-align:center;
+}
+
+  .circle{
+    background: radial-gradient(50% 50%, circle closest-corner, rgba(155, 0, 125, .1) 30%, #00CCCC 100%);
+    border-radius: 75px;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;  
+    position: absolute;
+    right:10px;
+    top: 150px;
+    z-index: 1;
 }
